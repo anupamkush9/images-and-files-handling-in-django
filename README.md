@@ -1,5 +1,4 @@
 # Resume Uploader Django API DRF
-#### Video Link:- https://youtu.be/FDdK9VQFHzY
 
 ## To Run this Project follow below:
 
