@@ -1,4 +1,3 @@
-from pyexpat import model
 from rest_framework import serializers
 from api.models import Profile
 from django.core.exceptions import ValidationError
