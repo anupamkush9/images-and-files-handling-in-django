@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from api.models import Profile
 from django.core.exceptions import ValidationError
+from .models import Book
 
 def validate_file_size(value):
   filesize = value.size # returns the file size in byte
@@ -15,3 +16,9 @@ class ProfileSerializer(serializers.ModelSerializer):
   class Meta:
     model=Profile
     fields = ['id', 'name', 'email', 'dob', 'state', 'gender', 'location', 'pimage', 'rdoc']
+    
+
+class BookSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book
+        fields = ['title', 'author', 'published_date', 'is_available', 'price']
